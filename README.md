@@ -72,14 +72,14 @@ I need to have the correct fare calculated
 
 ## Set up the project:
 
-  1. [Create a Gemfile](01_create_gemfile.md)
-  2. [Create RSpec conventional files](02_initialize_rspec.md)
-  3. [Review debugging basics](03_debugging.md)
+  1. [Create a Gemfile] DONE
+  2. [Create RSpec conventional files] DONE
+  3. [Review debugging basics] DONE
 
 ## Create a basic Oyster card:
-  4. [Add the balance](04_adding_balance.md)
-  5. [Enable top up functionality](05_top_up.md)
-  6. [Enforce maximum balance](06_maximum_balance.md)
+  4. [Add the balance] DONE
+  5. [Enable top up functionality] DONE
+  6. [Enforce maximum balance] DONE
   7. [Deduct the money](07_deducting_money.md)
 
 ## Add touch in/out functionality:
@@ -102,9 +102,3 @@ I need to have the correct fare calculated
   16. [Calculating the fare between zones](16_fare_for_zones.md)
 
 ## [Example Code](walkthroughs/example_code)
-
-<!-- BEGIN GENERATED SECTION DO NOT EDIT -->
-
----
-
-<!-- END GENERATED SECTION DO NOT EDIT -->
