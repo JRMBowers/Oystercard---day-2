@@ -29,4 +29,23 @@ describe Oystercard do
 
   end
 
+  describe '#in_journey?, #touch_in, #touch_out' do 
+
+    it 'confirms a new card is not in journey' do
+      expect(subject).not_to be_in_journey
+    end
+
+    it 'confirms when a card is in journey' do
+      subject.touch_in
+      expect(subject).to be_in_journey
+    end 
+
+    it 'confirms when a card is touched out' do 
+      subject.touch_in
+      subject.touch_out
+      expect(subject).not_to be_in_journey 
+    end 
+
+  end 
+
 end 
