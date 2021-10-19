@@ -32,18 +32,26 @@ describe Oystercard do
   describe '#in_journey?, #touch_in, #touch_out' do 
 
     it 'confirms a new card is not in journey' do
+      subject.top_up(5)
       expect(subject).not_to be_in_journey
     end
 
     it 'confirms when a card is in journey' do
+      subject.top_up(5)
       subject.touch_in
       expect(subject).to be_in_journey
     end 
 
     it 'confirms when a card is touched out' do 
+      subject.top_up(5)
       subject.touch_in
       subject.touch_out
       expect(subject).not_to be_in_journey 
+    end 
+
+    it 'returns error when fare is deducted and balance is zero' do 
+      error_message = 'insufficient balance'
+      expect { subject.touch_in }.to raise_error error_message
     end 
 
   end 
